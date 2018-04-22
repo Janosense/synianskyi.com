@@ -1,0 +1,28 @@
+.instruments {
+  text-align: right;
+}
+
+.instruments__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 20px 10px 0;
+  border-right: 2px solid $color-grey-light;
+}
+
+.instruments__item {
+  position: relative;
+  padding: 7px 0 7px;
+  color: $color-grey;
+  font-size: 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 7px;
+    height: 2px;
+    background-color: $color-grey-light;
+  }
+}

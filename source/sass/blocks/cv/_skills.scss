@@ -1,0 +1,87 @@
+.skills {
+  position: relative;
+  padding: 70px 0 35px;
+}
+
+.skills__layout {
+
+  span {
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: -265px;
+    text-transform: uppercase;
+    color: $color-grey-light;
+    font-size: 180px;
+    font-weight: 900;
+    line-height: 1;
+    z-index: 0;
+    opacity: 0.2;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+  }
+}
+
+.skills__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1160px;
+  margin: auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.skills__content {
+  display: flex;
+  padding-top: 30px;
+}
+
+.skills__title {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 40px;
+  padding: 8px 10px;
+  color: $color-white;
+  background-color: $color-grey;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1;
+
+  &--light {
+    color: $color-grey;
+    background-color: $color-grey-light;
+  }
+}
+
+.skills__container {
+
+  &--left {
+    width: 320px;
+    flex-shrink: 0;
+  }
+
+  &--right {
+    width: calc(80% - 320px);
+    padding: 0 0 0 100px;
+  }
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills__item {
+  width: 44%;
+  margin-bottom: 70px;
+  box-sizing: border-box;
+
+  &:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,50 @@
+.statistics {
+  padding: 20px 0;
+  background-color: $color-grey-light;
+}
+
+.statistics__wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.statistics__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.statistics__item {
+  width: 20%;
+  padding: 0 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.statistics__number {
+  display: inline-block;
+  vertical-align: middle;
+  color: $color-grey;
+  font-size: 100px;
+  font-weight: 900;
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+.statistics__text {
+  color: $color-grey;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+
+

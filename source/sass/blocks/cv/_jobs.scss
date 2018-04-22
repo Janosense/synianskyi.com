@@ -1,0 +1,94 @@
+.jobs {
+  position: relative;
+  padding: 35px 0;
+}
+
+.jobs__layout {
+  display: block;
+  position: absolute;
+  bottom: -200px;
+  right: -60px;
+  text-transform: uppercase;
+  color: $color-grey-light;
+  font-size: 300px;
+  font-weight: 900;
+  line-height: 1;
+  z-index: 0;
+  opacity: 0.2;
+}
+
+.jobs__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1160px;
+  margin: auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.jobs__title {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 40px;
+  padding: 8px 10px;
+  color: $color-white;
+  background-color: $color-grey;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.jobs__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 0 15px 30px;
+  border-left: 2px solid $color-grey;
+}
+
+.jobs__item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 125px;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -35px;
+    width: 8px;
+    height: 8px;
+    background-color: $color-grey;
+  }
+}
+
+.jobs__years {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  color: $color-grey-light;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.jobs__caption {
+  margin: 0 0 5px;
+  color: $color-grey;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.jobs__description {
+  margin: 0;
+  color: $color-grey;
+  font-weight: 300;
+  line-height: 1.1;
+}

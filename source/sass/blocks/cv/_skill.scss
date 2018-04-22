@@ -1,0 +1,39 @@
+.skill {
+  position: relative;
+}
+
+.skill__title {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 60px;
+  color: $color-grey;
+  font-size: 20px;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.skill__number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: $color-grey;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.skill__indicator {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.skill__indicator-icon {
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-color: $color-grey-light;
+
+  &--filled {
+    background-color: $color-grey;
+  }
+}

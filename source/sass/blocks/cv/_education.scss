@@ -1,0 +1,109 @@
+.education {
+  position: relative;
+  padding: 35px 0;
+}
+
+.education__layout {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -65px;
+  text-transform: uppercase;
+  color: $color-grey-light;
+  font-size: 200px;
+  font-weight: 900;
+  line-height: 1;
+  z-index: 0;
+  opacity: 0.2;
+}
+
+.education__wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.education__title {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 40px;
+  padding: 8px 10px;
+  color: $color-grey;
+  background-color: $color-grey-light;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.education__lines {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.education__line {
+  position: relative;
+  width: 28%;
+  padding: 50px 20px 20px 20px;
+  border-left: 2px solid $color-grey-light;
+  box-sizing: border-box;
+}
+
+.education__line-title {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  text-transform: uppercase;
+  color: $color-grey-light;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.education__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.education__item {
+  position: relative;
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -25px;
+    width: 8px;
+    height: 8px;
+    background-color: $color-grey-light;
+  }
+}
+
+.education__caption {
+  margin: 0 0 10px;
+  color: $color-grey;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.education__description {
+  margin: 0 0 0;
+  color: $color-grey;
+  font-weight: 300;
+}
+
+.education__years {
+  color: $color-grey;
+  font-size: 15px;
+  font-weight: 300;
+}
