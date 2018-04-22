@@ -1,14 +1,32 @@
 .statistics {
+  position: relative;
   padding: 20px 0;
   background-color: $color-grey-light;
+  overflow: hidden;
+}
+
+.statistics__layout {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  text-transform: uppercase;
+  color: $color-white;
+  font-size: 200px;
+  font-weight: 900;
+  line-height: 1;
+  z-index: 0;
+  opacity: 0.2;
 }
 
 .statistics__wrapper {
+  position: relative;
   width: 100%;
   max-width: 1160px;
   margin: auto;
   padding: 0 30px;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .statistics__list {

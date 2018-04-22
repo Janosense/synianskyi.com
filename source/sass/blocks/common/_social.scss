@@ -1,11 +1,21 @@
 .social {
-  position: absolute;
-  top: 0;
-  left: calc(100% + 20px);
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  z-index: 2;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 20;
+
+  &--cv {
+    position: absolute;
+  }
+
+  @media (max-width: 767px) {
+    top: 20px;
+    right: 20px;
+  }
+
+  &--static {
+    position: static;
+  }
 }
 
 .social__list {
@@ -15,7 +25,20 @@
 }
 
 .social__item {
-  margin-bottom: 15px;
+  margin: 0 0 20px;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 12px;
+  }
+
+  @media (max-width: 413px) {
+    margin-bottom: 8px;
+  }
 }
 
 .social__link {
