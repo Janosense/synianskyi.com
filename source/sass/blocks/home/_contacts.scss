@@ -10,7 +10,7 @@
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
-  color: $color-grey-light;
+  color: #999999;
   transition: color 0.3s ease;
 
   @media (max-width: 413px) {
@@ -39,6 +39,6 @@
   display: inline-block;
   vertical-align: middle;
   margin-right: 4px;
-  fill: $color-grey-light;
+  fill: $color-grey;
   transition: fill 0.3s ease;
 }

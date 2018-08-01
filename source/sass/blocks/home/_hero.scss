@@ -4,8 +4,9 @@
   justify-content: center;
   position: relative;
   width: 100%;
+  max-width: 2000px;
   height: 100vh;
-  background-color: #fff;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -13,7 +14,6 @@
   position: absolute;
   top: calc(50% - 91px);
   left: 117px;
-  background-color: #fff;
   z-index: 1;
 
   @media (max-width: 1300px) {
@@ -37,8 +37,16 @@
   z-index: 2;
   pointer-events: none;
 
+
   span {
     color: $color-grey-light;
+
+    @supports (-webkit-background-clip: text) {
+      background-image: linear-gradient(to right, $color-grey-light, #cdb9ab);
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   @media (max-width: 1300px) {

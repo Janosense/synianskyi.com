@@ -130,7 +130,7 @@
 
       balls.forEach(function(ball) {
         think(mousePosition, ball);
-        drawSquare(ball.x, ball.y, 20, 20, '#d9d9d9');
+        drawSquare(ball.x, ball.y, 20, 20, '#d0d0d0');
       });
     };
 
