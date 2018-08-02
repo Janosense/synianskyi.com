@@ -54,22 +54,23 @@
   <section class="hero">
     <h1 class="hero__title">Tymofii <span>Synianskyi</span></h1>
     <canvas id="canvas" class="hero__canvas" width="480" height="200"></canvas>
-    <div class="contacts hero__contacts">
-      <a href="mailto:janosense@gmail.com" class="contacts__item">
-        <svg class="contacts__icon contacts__icon--gmail" width="20" height="20" role="img" aria-labelledby="title-icon-gmail">
-          <title id="title-icon-gmail">Gmail</title>
-          <use xlink:href="#icon-gmail"></use>
-        </svg>
-        janosense@gmail.com
-      </a>
-      <a href="https://telegram.me/janosense" class="contacts__item" target="_blank">
-        <svg class="contacts__icon contacts__icon--telegram" width="20" height="20" role="img" aria-labelledby="title-icon-telegram">
-          <title id="title-icon-telegram">Telegram</title>
-          <use xlink:href="#icon-telegram"></use>
-        </svg>
-        @janosense
-      </a>
-    </div>
+    <!--<div class="contacts hero__contacts">-->
+      <!--<a href="mailto:janosense@gmail.com" class="contacts__item">-->
+        <!--<svg class="contacts__icon contacts__icon&#45;&#45;gmail" width="20" height="20" role="img" aria-labelledby="title-icon-gmail">-->
+          <!--<title id="title-icon-gmail">Gmail</title>-->
+          <!--<use xlink:href="#icon-gmail"></use>-->
+        <!--</svg>-->
+        <!--janosense@gmail.com-->
+      <!--</a>-->
+      <!--<a href="https://telegram.me/janosense" class="contacts__item" target="_blank">-->
+        <!--<svg class="contacts__icon contacts__icon&#45;&#45;telegram" width="20" height="20" role="img" aria-labelledby="title-icon-telegram">-->
+          <!--<title id="title-icon-telegram">Telegram</title>-->
+          <!--<use xlink:href="#icon-telegram"></use>-->
+        <!--</svg>-->
+        <!--@janosense-->
+      <!--</a>-->
+    <!--</div>-->
+    <button type="button" class="hero__button">Curriculum vitae</button>
   </section>
   <!-- HERO SECTION END -->
 </main>
@@ -117,8 +118,386 @@
 </aside>
 <!-- SOCIAL END -->
 
+<div class="layout"></div>
+
+<!-- MAIN START -->
+<div class="cv">
+
+  <!-- INTRODUCTION START -->
+  <section class="introduction">
+    <div class="social social--cv introduction__social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="https://github.com/Janosense" class="social__link" title="GitHub Profile" target="_blank">
+            GitHub
+            <svg class="social__icon social__icon--github" width="30" height="30" role="img" aria-labelledby="title-icon-github">
+              <title id="title-icon-github">GitHub Profile</title>
+              <use xlink:href="#icon-github"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="https://www.facebook.com/Janosense" class="social__link" title="Facebook Profile" target="_blank">
+            Facebook
+            <svg class="social__icon social__icon--facebook" width="27" height="27" role="img" aria-labelledby="title-icon-facebook">
+              <title id="title-icon-facebook">Facebook Profile</title>
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="https://www.linkedin.com/in/тимофей-синянский-59174710a/" class="social__link" title="LinkedIn Profile" target="_blank">
+            LinkedIn
+            <svg class="social__icon social__icon--linkedin" width="28" height="28" role="img" aria-labelledby="title-icon-linkedin">
+              <title id="title-icon-linkedin">LinkedIn Profile</title>
+              <use xlink:href="#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="https://www.instagram.com/tymofii_synianskyi/" class="social__link" title="Instagram Profile" target="_blank">
+            Instagram
+            <svg class="social__icon social__icon--instagram" width="28" height="28" role="img" aria-labelledby="title-icon-instagram">
+              <title id="title-icon-instagram">Instagram Profile</title>
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="introduction__wrapper">
+      <div class="introduction__photo">
+        <img src="img/i.jpg" alt="" class="introduction__image">
+      </div>
+      <div class="introduction__about">
+        <h1 class="introduction__name rellax" data-rellax-speed="-2">Тимофей Синянский</h1>
+        <span class="introduction__position">web-developer</span>
+        <table class="introduction__summary">
+          <tr>
+            <td>Возраст:</td>
+            <td>30 лет</td>
+          </tr>
+          <tr>
+            <td>Телефон:</td>
+            <td><a href="tel:+380507660627">+380 50 766 06 27</a></td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td><a href="mailto:janosense@gmail.com">janosense@gmail.com</a></td>
+          </tr>
+          <tr>
+            <td>Telegram:</td>
+            <td>@janosense</td>
+          </tr>
+          <tr>
+            <td>Сайт:</td>
+            <td>synianskyi.com</td>
+          </tr>
+          <tr>
+            <td>Адрес:</td>
+            <td>г. Ирпень (Киевская обл.)</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <!-- INTRODUCTION START -->
+
+  <!-- LEAD START -->
+  <div class="lead">
+    <div class="lead__wrapper">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim diam ac mauris tincidunt tincidunt. Nam quam
+        ligula, tristique in velit quis, accumsan aliquam est. Sed vel sem quam. Nullam vulputate lacus at imperdiet elementum.
+        Vestibulum at libero a velit volutpat interdum convallis ac urna. Vestibulum ipsum arcu, eleifend non ex sed, viverra
+        vestibulum risus. Fusce ut nisl laoreet, viverra metus eget, tempus nunc. Cras sed lacinia nunc. Fusce id accumsan elit.
+        Ut elementum ex et placerat molestie. Aliquam tincidunt ultrices fringilla. Mauris purus erat, varius non feugiat eget,
+        placerat eget lorem. Maecenas non volutpat ipsum. Nullam convallis purus tortor, nec vehicula mi rutrum ut. Vestibulum
+        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus suscipit, dolor vel laoreet cursus,
+        elit risus pulvinar ante, ac lacinia felis quam eget nisl.</p>
+      <p>Sed id libero quis nulla faucibus laoreet. Etiam feugiat venenatis scelerisque. Etiam dapibus accumsan lacus id pharetra.
+        In fermentum congue euismod. Proin neque dolor, lobortis in accumsan ut, laoreet sed leo. Vestibulum ut lorem tempor,
+        sodales ligula a, pellentesque neque. Ut sed arcu lacus. Nulla finibus ipsum enim, nec porta metus ultrices a.</p>
+    </div>
+  </div>
+  <!-- LEAD END -->
+
+  <!-- STATISTICS START -->
+  <div class="statistics">
+    <div class="statistics__layout rellax" data-rellax-speed="2">Статистика</div>
+    <div class="statistics__wrapper">
+      <ul class="statistics__list">
+        <li class="statistics__item">
+          <span class="statistics__number">4</span>
+          <p class="statistics__text">Года опыта разработки</p>
+        </li>
+        <li class="statistics__item">
+          <span class="statistics__number">60</span>
+          <p class="statistics__text">Реализованных проектов</p>
+        </li>
+        <li class="statistics__item">
+          <span class="statistics__number">10</span>
+          <p class="statistics__text">Lorem ipsum dolor sit amet</p>
+        </li>
+        <li class="statistics__item">
+          <span class="statistics__number">4</span>
+          <p class="statistics__text">Lorem ipsum dolor sit amet</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- STATISTICS END -->
+
+  <!-- SKILLS START -->
+  <section class="skills">
+    <div class="skills__layout rellax" data-rellax-speed="1">
+      <span>Скилы</span>
+    </div>
+    <div class="skills__wrapper">
+      <div class="skills__content">
+        <div class="instruments skills__container skills__container--left">
+          <h2 class="skills__title skills__title--light">Использую</h2>
+          <ul class="instruments__list">
+            <li class="instruments__item">BEM</li>
+            <li class="instruments__item">Gulp</li>
+            <li class="instruments__item">SASS</li>
+            <li class="instruments__item">PostCSS</li>
+            <li class="instruments__item">Flex</li>
+            <li class="instruments__item">Git</li>
+            <li class="instruments__item">PHPStorm</li>
+          </ul>
+        </div>
+        <div class="skills__container skills__container--right">
+          <h2 class="skills__title">Мои скилы</h2>
+          <ul class="skills__list">
+            <li class="skill skills__item">
+              <span class="skill__title">HTML</span>
+              <span class="skill__number">9/10</span>
+              <div class="skill__indicator">
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon"></i>
+              </div>
+            </li>
+            <li class="skill skills__item">
+              <span class="skill__title">CSS</span>
+              <span class="skill__number">9/10</span>
+              <div class="skill__indicator">
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon"></i>
+              </div>
+            </li>
+            <li class="skill skills__item">
+              <span class="skill__title">Javascript</span>
+              <span class="skill__number">6/10</span>
+              <div class="skill__indicator">
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon"></i>
+                <i class="skill__indicator-icon"></i>
+                <i class="skill__indicator-icon"></i>
+                <i class="skill__indicator-icon"></i>
+              </div>
+            </li>
+            <li class="skill skills__item">
+              <span class="skill__title">PHP</span>
+              <span class="skill__number">6/10</span>
+              <div class="skill__indicator">
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon"></i>
+                <i class="skill__indicator-icon"></i>
+                <i class="skill__indicator-icon"></i>
+                <i class="skill__indicator-icon"></i>
+              </div>
+            </li>
+            <li class="skill skills__item">
+              <span class="skill__title">Wordpress</span>
+              <span class="skill__number">8/10</span>
+              <div class="skill__indicator">
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon"></i>
+                <i class="skill__indicator-icon"></i>
+              </div>
+            </li>
+            <li class="skill skills__item">
+              <span class="skill__title">Drupal</span>
+              <span class="skill__number">6/10</span>
+              <div class="skill__indicator">
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
+                <i class="skill__indicator-icon"></i>
+                <i class="skill__indicator-icon"></i>
+                <i class="skill__indicator-icon"></i>
+                <i class="skill__indicator-icon"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SKILLS START -->
+
+  <!-- JOBS START -->
+  <section class="jobs">
+    <div class="jobs__layout rellax" data-rellax-speed="2">Работа</div>
+    <div class="jobs__wrapper">
+      <h2 class="jobs__title">Работа</h2>
+      <ul class="jobs__list">
+        <li class="jobs__item">
+          <span class="jobs__years">2018 - ...</span>
+          <h3 class="jobs__caption">Freelance, First realty group (удаленно)</h3>
+          <p class="jobs__description"></p>
+        </li>
+        <li class="jobs__item">
+          <span class="jobs__years">2017 - 2018</span>
+          <h3 class="jobs__caption">First realty group</h3>
+          <p class="jobs__description">Поддержка сайтов (frontend, backend) группы parklane.ua, blagovist.ua, 100realty.ua,
+            bizrealty.ua на платформе Drupal8. Разработка кастомных модулей модулей</p>
+        </li>
+        <li class="jobs__item">
+          <span class="jobs__years">2014 - 2017</span>
+          <h3 class="jobs__caption">Freelance</h3>
+          <p class="jobs__description">Разработка сайтов на платформе Wordpress, верстка макетов, поддержка существующих
+            проектов</p>
+        </li>
+        <li class="jobs__item">
+          <span class="jobs__years">2010 - 2014</span>
+          <h3 class="jobs__caption">Украинская ассоциация районных и областных советов</h3>
+          <p class="jobs__description">Администрирование сайта, организация мероприятий, организация деятельности секретариата</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- JOBS END -->
+
+  <!-- EDUCATIONS START -->
+  <section class="education">
+    <div class="education__layout rellax" data-rellax-speed="1">Образование</div>
+    <div class="education__wrapper">
+      <h2 class="education__title">Образование</h2>
+      <ul class="education__lines">
+        <li class="education__line">
+          <span class="education__line-title">Основное</span>
+          <ul class="education__list">
+            <li class="education__item">
+              <h3 class="education__caption">Киевский экономический интистут менеджемента</h3>
+              <p class="education__description">Менеджмент организации</p>
+              <span class="education__years">2004 - 2010</span>
+            </li>
+          </ul>
+        </li>
+        <li class="education__line">
+          <span class="education__line-title">Дополнительное</span>
+          <ul class="education__list">
+            <li class="education__item">
+              <h3 class="education__caption">PHP Academy</h3>
+              <p class="education__description">Разработка приложений на PHP</p>
+              <span class="education__years">2016</span>
+            </li>
+            <li class="education__item">
+              <h3 class="education__caption">Компьютерная академия ШАГ (КФ)</h3>
+              <p class="education__description">Разработка программного обеспечения</p>
+              <span class="education__years">2014 - 2016</span>
+            </li>
+            <li class="education__item">
+              <h3 class="education__caption">Компьютерная академия ШАГ (КФ)</h3>
+              <p class="education__description">Компьютерная графика и дизайн</p>
+              <span class="education__years">2010 - 2011</span>
+            </li>
+          </ul>
+        </li>
+        <li class="education__line">
+          <span class="education__line-title">Online</span>
+          <ul class="education__list">
+            <li class="education__item">
+              <h3 class="education__caption">HTML Academy</h3>
+              <p class="education__description">HTML, CSS, Javascript</p>
+              <span class="education__years">2015 - ...</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- EDUCATIONS END -->
+
+  <!-- POST SCRIPTUM START -->
+  <section class="ps">
+    <!--<div class="ps__desires"></div>-->
+    <div class="ps__headline">
+      <div class="ps__wrapper">
+        <span class="ps__caption">P.S.</span>
+        <h2 class="ps__title">О себе</h2>
+      </div>
+    </div>
+    <div class="ps__wrapper">
+      <p class="ps__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim diam ac mauris tincidunt tincidunt. Nam quam
+        ligula, tristique in velit quis, accumsan aliquam est. Sed vel sem quam. Nullam vulputate lacus at imperdiet elementum.
+        Vestibulum at libero a velit volutpat interdum convallis ac urna. Vestibulum ipsum arcu, eleifend non ex sed, viverra
+        vestibulum risus. Fusce ut nisl laoreet, viverra metus eget, tempus nunc. Cras sed lacinia nunc. Fusce id accumsan elit.
+        Ut elementum ex et placerat molestie. Aliquam tincidunt ultrices fringilla. Mauris purus erat, varius non feugiat eget,
+        placerat eget lorem. Maecenas non volutpat ipsum. Nullam convallis purus tortor, nec vehicula mi rutrum ut. Vestibulum
+        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus suscipit, dolor vel laoreet cursus,
+        elit risus pulvinar ante, ac lacinia felis quam eget nisl.
+      </p>
+    </div>
+  </section>
+  <!-- POST SCRIPTUM START -->
+
+</div>
+<!-- MAIN END -->
+
 <!-- SCRIPT START -->
 <script src="js/main.min.js"></script>
 <!-- SCRIPT END -->
+
+<script>
+  var button = document.querySelector(".hero__button");
+  var layout = document.querySelector(".layout");
+  var hero = document.querySelector(".hero");
+  button.addEventListener("click", function() {
+    layout.classList.add("layout--visible");
+    hero.classList.add("hero--translated");
+    setTimeout(function() {
+      layout.classList.add("layout--collapsed");
+    }, 500)
+  });
+</script>
 </body>
 </html>

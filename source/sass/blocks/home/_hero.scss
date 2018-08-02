@@ -2,12 +2,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 2000px;
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
+  opacity: 1;
+  transition: all 0.6s ease;
+
+
+  &--translated {
+    transform: translate(0, -20%);
+    opacity: 0;
+  }
 }
 
 .hero__canvas {
@@ -42,7 +51,7 @@
     color: $color-grey-light;
 
     @supports (-webkit-background-clip: text) {
-      background-image: linear-gradient(to right, $color-grey-light, #cdb9ab);
+      background:linear-gradient(135deg, rgba(227, 227, 227, 0.9) 0%, #5d6874 100%);
       -webkit-background-clip: text;
       color: transparent;
       -webkit-text-fill-color: transparent;
@@ -71,32 +80,48 @@
     font-size: 58px;
   }
 }
+//
+//.hero__contacts {
+//  position: absolute;
+//  left: 137px;
+//  top: calc(50% + 120px);
+//
+//  @media (max-width: 1300px) {
+//    left: 31px;
+//  }
+//
+//  @media (max-width: 1100px) {
+//    top: calc(50% + 160px);
+//    left: 52px;
+//  }
+//
+//  @media (max-width: 767px) {
+//    top: calc(50% + 110px);
+//    left: 15px;
+//  }
+//
+//  @media (max-width: 413px) {
+//    top: calc(50% + 90px);
+//  }
+//}
 
-.hero__contacts {
-  position: absolute;
-  left: 137px;
-  top: calc(50% + 120px);
-
-  @media (max-width: 1300px) {
-    left: 31px;
-  }
-
-  @media (max-width: 1100px) {
-    top: calc(50% + 160px);
-    left: 52px;
-  }
-
-  @media (max-width: 767px) {
-    top: calc(50% + 110px);
-    left: 15px;
-  }
-
-  @media (max-width: 413px) {
-    top: calc(50% + 90px);
-  }
-}
-
-.hero__navigation {
-  width: 1022px;
-  margin-left: 156px;
+.hero__button {
+  -webkit-appearance: none;
+  display: block;
+  position: fixed;
+  top: 342px;
+  right: -77px;
+  margin: 0;
+  padding: 10px 17px 12px;
+  color: #5d6874;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1;
+  border: none;
+  border-left: 1px solid #5d6874;
+  cursor: pointer;
+  transform: rotate(90deg);
+  z-index: 1000;
 }
