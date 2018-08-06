@@ -38,12 +38,12 @@ const webp = require('gulp-webp');
 
 const path = {
   build: {
-    html: 'build',
-    css: 'build/css',
-    js: 'build/js',
-    img: 'build/img',
-    webp: 'build/img/webp',
-    fonts: 'build/fonts'
+    html: './',
+    css: './css',
+    js: './js',
+    img: './img',
+    webp: './img/webp',
+    fonts: './fonts'
   },
   source: {
     html: 'source/*.html',
@@ -261,15 +261,19 @@ gulp.task('fonts', function () {
 
 gulp.task('serve', function() {
   browserSync.init({
-    server: 'build',
+    server: './',
     notify: false,
   });
 
-  browserSync.watch('build/**/*.*').on('change', browserSync.reload);
+  browserSync.watch("css/*.css").on('change', browserSync.reload);
+  browserSync.watch("js/*.js").on('change', browserSync.reload);
+  browserSync.watch("img/*.*").on('change', browserSync.reload);
+  browserSync.watch("fonts/*.*").on('change', browserSync.reload);
+  browserSync.watch("*.html").on('change', browserSync.reload);
 });
 
 gulp.task('clear.build', function () {
-  return del('build/');
+  return del(['css/', 'js/', 'fonts/', 'img/', './*.html']);
 });
 
 gulp.task('clear.manifest', function () {
