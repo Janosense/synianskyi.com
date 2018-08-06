@@ -5,20 +5,23 @@
 /*
  * Home page
  */
-@import "blocks/home/hero";
-@import "blocks/common/social";
-@import "blocks/home/contacts";
-@import "blocks/home/particles";
-@import "blocks/home/layout";
+@import "blocks/hero";
+@import "blocks/social";
+@import "blocks/contacts";
+@import "blocks/particles";
+@import "blocks/layout";
 
 
-@import "blocks/cv/introduction";
-@import "blocks/cv/lead";
-@import "blocks/cv/statistics";
-@import "blocks/cv/skills";
-@import "blocks/cv/skill";
-@import "blocks/cv/instruments";
-@import "blocks/cv/jobs";
-@import "blocks/cv/education";
-@import "blocks/cv/ps";
+@import "blocks/introduction";
+@import "blocks/lead";
+@import "blocks/statistics";
+@import "blocks/skills";
+@import "blocks/skill";
+@import "blocks/instruments";
+@import "blocks/jobs";
+@import "blocks/education";
+@import "blocks/ps";
+
+@import "blocks/cv";
+@import "blocks/cv-close";
 

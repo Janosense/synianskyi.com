@@ -1,17 +1,16 @@
-(function() {
 
-  var CURSOR_RADIUS = 20;
-  var CANVAS_WIDTH = 480;
-  var CANVAS_HEIGHT = 200;
-  var canvas = document.querySelector('#canvas');
+  const CURSOR_RADIUS = 20;
+  const CANVAS_WIDTH = 480;
+  const CANVAS_HEIGHT = 200;
+  const canvas = document.querySelector('#canvas');
 
   if (canvas && document.documentElement.clientWidth > 1100) {
-    var ctx = canvas.getContext('2d');
-    var rect = canvas.getBoundingClientRect();
-    var mousePosition = {};
-    var balls = [];
+    let ctx = canvas.getContext('2d');
+    let rect = canvas.getBoundingClientRect();
+    let mousePosition = {};
+    let balls = [];
 
-    var drawBall = function (x, y, radius, color) {
+    let drawBall = function (x, y, radius, color) {
       ctx.save();
       ctx.beginPath();
       ctx.arc(x, y, radius, 0, 2 * Math.PI);
@@ -21,7 +20,7 @@
       ctx.restore();
     };
 
-    var drawSquare = function (x, y, width, height, color) {
+    let drawSquare = function (x, y, width, height, color) {
       ctx.save();
       ctx.beginPath();
       ctx.rect(x, y, width, height);
@@ -31,18 +30,18 @@
       ctx.restore();
     };
 
-    var onCanvasMouseMove = function (evt) {
+    let onCanvasMouseMove = function (evt) {
       mousePosition = {
         x: evt.clientX - rect.left,
         y: evt.clientY - rect.top
       };
     };
 
-    var createRandomBallsSet = function (count) {
-      var balls = [];
-      for (var i = 0; i < count; i++) {
-        var coorX = Math.random() * CANVAS_WIDTH;
-        var coorY = Math.random() * CANVAS_HEIGHT;
+    let createRandomBallsSet = function (count) {
+      let balls = [];
+      for (let i = 0; i < count; i++) {
+        let coorX = Math.random() * CANVAS_WIDTH;
+        let coorY = Math.random() * CANVAS_HEIGHT;
         balls.push({
           x: coorX,
           y: coorY,
@@ -58,13 +57,13 @@
       return balls;
     };
 
-    var createSquareSet = function (width, countVertical, countHorizontal) {
-      var items = [];
+    let createSquareSet = function (width, countVertical, countHorizontal) {
+      let items = [];
 
-      for (var i = 0; i < countHorizontal; i++) {
-        for (var j = 0; j < countVertical; j++) {
-          var coorX =width + width * j;
-          var coorY = width + width * i;
+      for (let i = 0; i < countHorizontal; i++) {
+        for (let j = 0; j < countVertical; j++) {
+          let coorX =width + width * j;
+          let coorY = width + width * i;
           items.push({
             x: coorX,
             y: coorY,
@@ -81,24 +80,24 @@
       return items;
     };
 
-    var think = function (mousePos, ball) {
-      var dx = ball.x - mousePos.x;
-      var dy = ball.y - mousePos.y;
+    let think = function (mousePos, ball) {
+      let dx = ball.x - mousePos.x;
+      let dy = ball.y - mousePos.y;
 
-      var dist = Math.sqrt(dx * dx + dy * dy);
+      let dist = Math.sqrt(dx * dx + dy * dy);
 
 
       if (dist < CURSOR_RADIUS) {
-        var angle = Math.atan2(dy, dx);
-        var tx = mousePos.x + Math.cos(angle) * CURSOR_RADIUS;
-        var ty = mousePos.y + Math.sin(angle) * CURSOR_RADIUS;
+        let angle = Math.atan2(dy, dx);
+        let tx = mousePos.x + Math.cos(angle) * CURSOR_RADIUS;
+        let ty = mousePos.y + Math.sin(angle) * CURSOR_RADIUS;
 
         ball.vx += tx - ball.x;
         ball.vy += ty - ball.y;
       }
 
-      var dx1 = -(ball.x - ball.originalX);
-      var dy1 = -(ball.y - ball.originalY);
+      let dx1 = -(ball.x - ball.originalX);
+      let dy1 = -(ball.y - ball.originalY);
 
       ball.vx += dx1 * ball.springFactor;
       ball.vy += dy1 * ball.springFactor;
@@ -123,8 +122,8 @@
 
     balls = createSquareSet(20, 22, 8);
 
-    var render = function () {
-      animationFrameId = window.requestAnimationFrame(render);
+    let render = function () {
+      let animationFrameId = window.requestAnimationFrame(render);
       ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
       drawBall(mousePosition.x, mousePosition.y, CURSOR_RADIUS, '#fff');
 
@@ -137,4 +136,3 @@
     render();
   }
 
-})();

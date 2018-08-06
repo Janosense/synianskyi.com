@@ -1,0 +1,33 @@
+.cv-close {
+  visibility: hidden;
+  display: block;
+  position: fixed;
+  top: 70px;
+  left: 70px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 0;
+  border: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  cursor: pointer;
+  z-index: 10000;
+  outline: none;
+
+  &--active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &:hover {
+    .cv-close__icon {
+      fill: #5d6874
+    }
+  }
+}
+
+.cv-close__icon {
+  fill: rgba(227, 227, 227, 0.9);
+  transition: fill 0.3s ease;
+}

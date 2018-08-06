@@ -1,6 +1,6 @@
 .introduction {
   position: relative;
-  padding: 90px 0 30px;
+  padding: 90px 0 60px;
   color: $color-grey;
 }
 
@@ -29,7 +29,7 @@
   top: -5px;
   flex-grow: 1;
   padding-top: 130px;
-  padding-left: 100px;
+  padding-left: 90px;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -40,20 +40,26 @@
   left: -105px;
   width: 180%;
   margin: 0 0 3px;
-  color: $color-grey-light;
+  color: #dadada;
   font-size: 120px;
   font-weight: 900;
   line-height: 1;
   z-index: 1;
-  opacity: 0.7;
+
+  @supports (-webkit-background-clip: text) {
+    background-image: linear-gradient(135deg, rgba(227, 227, 227, 0.9) 0%, #5d6874 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .introduction__position {
   position: absolute;
-  top: 132px;
-  right: 0;
+  top: 120px;
+  right: 100px;
   color: $color-grey;
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 300;
   z-index: 2;
 }

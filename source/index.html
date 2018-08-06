@@ -11,11 +11,13 @@
   <link rel="preload" href="fonts/roboto-medium.woff2" as="font">
   <link rel="preload" href="js/main.min.js" as="script">
   <link rel="stylesheet" href="css/main.min.css">
-  <meta name="google-site-verification" content="pfSrxQfvOYPMn5qPwM-aEpxDR5eJcwPA0rJVUaEP3FU" />
+  <meta name="google-site-verification" content="pfSrxQfvOYPMn5qPwM-aEpxDR5eJcwPA0rJVUaEP3FU"/>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118656330-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'UA-118656330-1');
   </script>
@@ -25,26 +27,39 @@
 <!-- SVG SPRITE START -->
 <svg style="display: none">
   <symbol id="icon-github" viewBox="0 0 24 24">
-    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+    <path
+        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
   </symbol>
   <symbol id="icon-facebook" viewBox="0 0 24 24">
-    <path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"></path>
+    <path
+        d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"></path>
   </symbol>
   <symbol id="icon-instagram" viewBox="0 0 512 512">
     <g>
-      <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160 C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48 h192c61.76,0,112,50.24,112,112V352z"></path>
-      <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336 c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"></path>
+      <path
+          d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160 C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48 h192c61.76,0,112,50.24,112,112V352z"></path>
+      <path
+          d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336 c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"></path>
       <circle cx="393.6" cy="118.4" r="17.056"></circle>
     </g>
   </symbol>
   <symbol id="icon-linkedin" viewBox="0 0 24 24">
-    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+    <path
+        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
   </symbol>
   <symbol id="icon-telegram" viewBox="0 0 24 24">
-    <path d="M9.403 15.213l8.89 6.568c1.015.56 1.748.271 2-.942l3.62-17.053c.372-1.487-.564-2.159-1.534-1.72L1.125 10.263c-1.45.582-1.443 1.392-.264 1.753l5.455 1.7L18.94 5.753c.595-.36 1.143-.167.694.232"></path>
+    <path
+        d="M9.403 15.213l8.89 6.568c1.015.56 1.748.271 2-.942l3.62-17.053c.372-1.487-.564-2.159-1.534-1.72L1.125 10.263c-1.45.582-1.443 1.392-.264 1.753l5.455 1.7L18.94 5.753c.595-.36 1.143-.167.694.232"></path>
   </symbol>
   <symbol id="icon-gmail" viewBox="0 0 24 24">
-    <path d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"></path>
+    <path
+        d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"></path>
+  </symbol>
+  <symbol id="icon-close" viewBox="0 0 34 34">
+    <g transform="translate(-1342.000000, -44.000000)">
+      <polygon transform="translate(1359.112698, 61.112698) rotate(45.000000) translate(-1359.112698, -61.112698)"
+               points="1381.1127 62.579365 1360.57937 62.579365 1360.57937 83.1126984 1357.64603 83.1126984 1357.64603 62.579365 1337.1127 62.579365 1337.1127 59.6460317 1357.64603 59.6460317 1357.64603 39.1126984 1360.57937 39.1126984 1360.57937 59.6460317 1381.1127 59.6460317"></polygon>
+    </g>
   </symbol>
 </svg>
 <!-- SVG SPRITE END -->
@@ -54,22 +69,6 @@
   <section class="hero">
     <h1 class="hero__title">Tymofii <span>Synianskyi</span></h1>
     <canvas id="canvas" class="hero__canvas" width="480" height="200"></canvas>
-    <!--<div class="contacts hero__contacts">-->
-      <!--<a href="mailto:janosense@gmail.com" class="contacts__item">-->
-        <!--<svg class="contacts__icon contacts__icon&#45;&#45;gmail" width="20" height="20" role="img" aria-labelledby="title-icon-gmail">-->
-          <!--<title id="title-icon-gmail">Gmail</title>-->
-          <!--<use xlink:href="#icon-gmail"></use>-->
-        <!--</svg>-->
-        <!--janosense@gmail.com-->
-      <!--</a>-->
-      <!--<a href="https://telegram.me/janosense" class="contacts__item" target="_blank">-->
-        <!--<svg class="contacts__icon contacts__icon&#45;&#45;telegram" width="20" height="20" role="img" aria-labelledby="title-icon-telegram">-->
-          <!--<title id="title-icon-telegram">Telegram</title>-->
-          <!--<use xlink:href="#icon-telegram"></use>-->
-        <!--</svg>-->
-        <!--@janosense-->
-      <!--</a>-->
-    <!--</div>-->
     <button type="button" class="hero__button">Curriculum vitae</button>
   </section>
   <!-- HERO SECTION END -->
@@ -97,7 +96,8 @@
       </a>
     </li>
     <li class="social__item">
-      <a href="https://www.linkedin.com/in/тимофей-синянский-59174710a/" class="social__link" title="LinkedIn Profile" target="_blank">
+      <a href="https://www.linkedin.com/in/тимофей-синянский-59174710a/" class="social__link" title="LinkedIn Profile"
+         target="_blank">
         LinkedIn
         <svg class="social__icon social__icon--linkedin" width="28" height="28" role="img" aria-labelledby="title-icon-linkedin">
           <title id="title-icon-linkedin">LinkedIn Profile</title>
@@ -108,7 +108,8 @@
     <li class="social__item">
       <a href="https://www.instagram.com/tymofii_synianskyi/" class="social__link" title="Instagram Profile" target="_blank">
         Instagram
-        <svg class="social__icon social__icon--instagram" width="28" height="28" role="img" aria-labelledby="title-icon-instagram">
+        <svg class="social__icon social__icon--instagram" width="28" height="28" role="img"
+             aria-labelledby="title-icon-instagram">
           <title id="title-icon-instagram">Instagram Profile</title>
           <use xlink:href="#icon-instagram"></use>
         </svg>
@@ -120,51 +121,11 @@
 
 <div class="layout"></div>
 
-<!-- MAIN START -->
+<!-- CV START -->
 <div class="cv">
 
   <!-- INTRODUCTION START -->
   <section class="introduction">
-    <div class="social social--cv introduction__social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a href="https://github.com/Janosense" class="social__link" title="GitHub Profile" target="_blank">
-            GitHub
-            <svg class="social__icon social__icon--github" width="30" height="30" role="img" aria-labelledby="title-icon-github">
-              <title id="title-icon-github">GitHub Profile</title>
-              <use xlink:href="#icon-github"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="https://www.facebook.com/Janosense" class="social__link" title="Facebook Profile" target="_blank">
-            Facebook
-            <svg class="social__icon social__icon--facebook" width="27" height="27" role="img" aria-labelledby="title-icon-facebook">
-              <title id="title-icon-facebook">Facebook Profile</title>
-              <use xlink:href="#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="https://www.linkedin.com/in/тимофей-синянский-59174710a/" class="social__link" title="LinkedIn Profile" target="_blank">
-            LinkedIn
-            <svg class="social__icon social__icon--linkedin" width="28" height="28" role="img" aria-labelledby="title-icon-linkedin">
-              <title id="title-icon-linkedin">LinkedIn Profile</title>
-              <use xlink:href="#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="https://www.instagram.com/tymofii_synianskyi/" class="social__link" title="Instagram Profile" target="_blank">
-            Instagram
-            <svg class="social__icon social__icon--instagram" width="28" height="28" role="img" aria-labelledby="title-icon-instagram">
-              <title id="title-icon-instagram">Instagram Profile</title>
-              <use xlink:href="#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
     <div class="introduction__wrapper">
       <div class="introduction__photo">
         <img src="img/i.jpg" alt="" class="introduction__image">
@@ -220,32 +181,6 @@
     </div>
   </div>
   <!-- LEAD END -->
-
-  <!-- STATISTICS START -->
-  <div class="statistics">
-    <div class="statistics__layout rellax" data-rellax-speed="2">Статистика</div>
-    <div class="statistics__wrapper">
-      <ul class="statistics__list">
-        <li class="statistics__item">
-          <span class="statistics__number">4</span>
-          <p class="statistics__text">Года опыта разработки</p>
-        </li>
-        <li class="statistics__item">
-          <span class="statistics__number">60</span>
-          <p class="statistics__text">Реализованных проектов</p>
-        </li>
-        <li class="statistics__item">
-          <span class="statistics__number">10</span>
-          <p class="statistics__text">Lorem ipsum dolor sit amet</p>
-        </li>
-        <li class="statistics__item">
-          <span class="statistics__number">4</span>
-          <p class="statistics__text">Lorem ipsum dolor sit amet</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- STATISTICS END -->
 
   <!-- SKILLS START -->
   <section class="skills">
@@ -481,23 +416,23 @@
   <!-- POST SCRIPTUM START -->
 
 </div>
-<!-- MAIN END -->
+
+<button class="cv-close">
+  Закрыть резюме
+  <svg class="cv-close__icon" width="50" height="50" role="img" aria-labelledby="title_icon_close_popup">
+    <title id="title_icon_close_popup">Закрыть резюме</title>
+    <use xlink:href="#icon-close"></use>
+  </svg>
+</button>
+<!-- CV END -->
 
 <!-- SCRIPT START -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script src="js/main.min.js"></script>
 <!-- SCRIPT END -->
 
 <script>
-  var button = document.querySelector(".hero__button");
-  var layout = document.querySelector(".layout");
-  var hero = document.querySelector(".hero");
-  button.addEventListener("click", function() {
-    layout.classList.add("layout--visible");
-    hero.classList.add("hero--translated");
-    setTimeout(function() {
-      layout.classList.add("layout--collapsed");
-    }, 500)
-  });
+
 </script>
 </body>
 </html>

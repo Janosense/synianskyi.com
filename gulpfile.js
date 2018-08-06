@@ -3,13 +3,13 @@
 const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === 'dev';
 
 const autoprefixer = require('autoprefixer');
-const assets = require('postcss-assets');
+const babel = require("gulp-babel");
 const browserSync = require('browser-sync').create();
 const cached = require('gulp-cached');
+const commonjs = require('rollup-plugin-commonjs');
 const csso = require('gulp-csso');
 const debug = require('gulp-debug');
 const del = require('del');
-const fontMagician = require('postcss-font-magician');
 const gulp = require('gulp');
 const gulpIf = require('gulp-if');
 const htmlMin = require('gulp-htmlmin');
@@ -24,8 +24,10 @@ const plumber = require('gulp-plumber');
 const pngQuant = require('imagemin-pngquant');
 const postCss = require('gulp-postcss');
 const rename = require('gulp-rename');
+const resolve = require('rollup-plugin-node-resolve');
 const rev = require('gulp-rev');
 const revReplace = require('gulp-rev-replace');
+const rollup = require('gulp-better-rollup');
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 const sortCSSmq = require('sort-css-media-queries');
@@ -133,7 +135,7 @@ gulp.task('sass', function () {
     .pipe(gulpIf(isDev, plumber({
       errorHandler: notify.onError(err => ({
         title: 'sass',
-        message: err.message
+        message: err.plugin + " - " + err.message
       }))
     })))
     .pipe(gulpIf(isDev, sourceMaps.init()))
@@ -156,14 +158,17 @@ gulp.task('js', function () {
     .pipe(gulpIf(isDev, plumber({
       errorHandler: notify.onError(err => ({
         title: 'js',
-        message: err.message
+        message: err.plugin + " - " + err.message
       }))
     })))
     .pipe(gulpIf(isDev, sourceMaps.init()))
-    .pipe(include({
-      extensions: "js",
-      hardFail: true,
-    }))
+    .pipe(rollup({
+      plugins: [
+        resolve({browser: true}),
+        commonjs(),
+      ],
+    },"iife"))
+    .pipe(babel())
     .pipe(gulpIf(!isDev, uglify()))
     .pipe(rename({
       suffix: '.min'
@@ -180,7 +185,7 @@ gulp.task('html', function () {
     .pipe(gulpIf(isDev, plumber({
       errorHandler: notify.onError(err => ({
         title: 'html',
-        message: err.message
+        message: err.plugin + " - " + err.message
       }))
     })))
     .pipe(gulpIf(isDev, cached('html')))
@@ -211,7 +216,7 @@ gulp.task('image', function () {
     .pipe(gulpIf(isDev, plumber({
       errorHandler: notify.onError(err => ({
         title: 'image',
-        message: err.message
+        message: err.plugin + " - " + err.message
       }))
     })))
     .pipe(newer(path.build.img))
@@ -238,7 +243,7 @@ gulp.task('webp', function() {
     .pipe(gulpIf(isDev, plumber({
       errorHandler: notify.onError(err => ({
         title: 'webp',
-        message: err.message
+        message: err.plugin + " - " + err.message
       }))
     })))
     .pipe(gulpIf(isDev, cached('webp')))

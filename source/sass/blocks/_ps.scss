@@ -16,7 +16,8 @@
   height: 120px;
   margin: 0 0 70px;
   color: $color-white;
-  background-color: $color-grey-light;
+  background-color: rgba(227, 227, 227, 0.9);
+  background-image: linear-gradient(135deg, rgba(227, 227, 227, 0.9) 0%, #5d6874 100%);
 }
 
 .ps__caption {
@@ -38,7 +39,7 @@
   margin: 0 0 40px;
   padding: 8px 10px;
   color: $color-white;
-  background-color: $color-grey;
+  background-image: linear-gradient(135deg, rgba(93, 104, 116, 0.67) 0%, #5d6874 100%);
   font-weight: 300;
   font-size: 22px;
   line-height: 1;
