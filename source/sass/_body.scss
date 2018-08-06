@@ -18,5 +18,10 @@ body {
   -o-scroll-behavior: smooth;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  overflow-x: hidden;
+  overflow: hidden;
+
+  &.scrollable {
+    overflow: auto;
+    overflow-x: hidden;
+  }
 }

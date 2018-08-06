@@ -15,9 +15,11 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118656330-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
       dataLayer.push(arguments);
     }
+
     gtag('js', new Date());
     gtag('config', 'UA-118656330-1');
   </script>
@@ -204,103 +206,17 @@
         <div class="skills__container skills__container--right">
           <h2 class="skills__title">Мои скилы</h2>
           <ul class="skills__list">
-            <li class="skill skills__item">
-              <span class="skill__title">HTML</span>
-              <span class="skill__number">9/10</span>
-              <div class="skill__indicator">
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon"></i>
-              </div>
-            </li>
-            <li class="skill skills__item">
-              <span class="skill__title">CSS</span>
-              <span class="skill__number">9/10</span>
-              <div class="skill__indicator">
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon"></i>
-              </div>
-            </li>
-            <li class="skill skills__item">
-              <span class="skill__title">Javascript</span>
-              <span class="skill__number">6/10</span>
-              <div class="skill__indicator">
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon"></i>
-                <i class="skill__indicator-icon"></i>
-                <i class="skill__indicator-icon"></i>
-                <i class="skill__indicator-icon"></i>
-              </div>
-            </li>
-            <li class="skill skills__item">
-              <span class="skill__title">PHP</span>
-              <span class="skill__number">6/10</span>
-              <div class="skill__indicator">
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon"></i>
-                <i class="skill__indicator-icon"></i>
-                <i class="skill__indicator-icon"></i>
-                <i class="skill__indicator-icon"></i>
-              </div>
-            </li>
-            <li class="skill skills__item">
-              <span class="skill__title">Wordpress</span>
-              <span class="skill__number">8/10</span>
-              <div class="skill__indicator">
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon"></i>
-                <i class="skill__indicator-icon"></i>
-              </div>
-            </li>
-            <li class="skill skills__item">
-              <span class="skill__title">Drupal</span>
-              <span class="skill__number">6/10</span>
-              <div class="skill__indicator">
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon skill__indicator-icon--filled"></i>
-                <i class="skill__indicator-icon"></i>
-                <i class="skill__indicator-icon"></i>
-                <i class="skill__indicator-icon"></i>
-                <i class="skill__indicator-icon"></i>
-              </div>
-            </li>
           </ul>
+          <template id="skill-template">
+            <li class="skill skills__item">
+              <span class="skill__title"></span>
+              <span class="skill__number"></span>
+              <div class="skill__indicator">
+                <span class="skill__indicator-icon skill__indicator-icon--filled"></span>
+                <span class="skill__indicator-icon"></span>
+              </div>
+            </li>
+          </template>
         </div>
       </div>
     </div>
