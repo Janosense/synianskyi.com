@@ -35,6 +35,11 @@
     top: 30px;
     left: 30px;
   }
+
+  @media (max-width: 413px) {
+    top: 25px;
+    left: 25px;
+  }
 }
 
 .cv-close__icon {

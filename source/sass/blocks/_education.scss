@@ -22,6 +22,11 @@
   @media (max-width: 1023px) {
     font-size: 160px;
   }
+
+  @media (max-width: 767px) {
+    left: -20px;
+    font-size: 100px;
+  }
 }
 
 .education__wrapper {
@@ -31,6 +36,7 @@
   padding: 0 30px;
   box-sizing: border-box;
 }
+
 .education__title {
   display: inline-block;
   vertical-align: middle;
@@ -50,6 +56,10 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+  }
 }
 
 .education__line {
@@ -58,6 +68,11 @@
   padding: 50px 20px 20px 20px;
   border-left: 2px solid $color-grey-light;
   box-sizing: border-box;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .education__line-title {
@@ -92,11 +107,15 @@
     content: "";
     display: block;
     position: absolute;
-    top: 8px;
+    top: 6px;
     left: -25px;
     width: 8px;
     height: 8px;
     background-color: $color-grey-light;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
   }
 }
 

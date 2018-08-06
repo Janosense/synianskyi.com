@@ -19,6 +19,14 @@
   color: $color-grey;
   font-size: 18px;
   font-weight: 300;
+
+  @media (max-width: 680px) {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: block;
+    font-size: 15px;
+  }
 }
 
 .skill__indicator {
@@ -35,5 +43,10 @@
 
   &--filled {
     background-color: #5d6874;
+  }
+
+  @media (max-width: 800px) {
+    width: 7px;
+    height: 7px;
   }
 }

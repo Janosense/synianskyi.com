@@ -23,6 +23,12 @@
     right: -80px;
     font-size: 230px;
   }
+
+  @media (max-width: 767px) {
+    right: auto;
+    left: -20px;
+    font-size: 150px;
+  }
 }
 
 .jobs__wrapper {
@@ -52,6 +58,10 @@
   margin: 0;
   padding: 15px 0 15px 30px;
   border-left: 2px solid $color-grey;
+
+  @media (max-width: 767px) {
+    padding-left: 20px;
+  }
 }
 
 .jobs__item {
@@ -73,6 +83,14 @@
     width: 8px;
     height: 8px;
     background-color: $color-grey;
+
+    @media (max-width: 767px) {
+      left: -25px;
+    }
+  }
+
+  @media (max-width: 680px) {
+    padding-left: 0;
   }
 }
 
@@ -84,6 +102,12 @@
   font-size: 18px;
   font-weight: 900;
   line-height: 1;
+
+  @media (max-width: 680px) {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 
 .jobs__caption {
