@@ -31,9 +31,9 @@
   display: block;
   width: 9px;
   height: 9px;
-  background-color: $color-grey-light;
+  background-color: rgba(227, 227, 227, 1);
 
   &--filled {
-    background-color: $color-grey;
+    background-color: #5d6874;
   }
 }

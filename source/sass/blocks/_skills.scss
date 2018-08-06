@@ -1,23 +1,32 @@
 .skills {
   position: relative;
   padding: 60px 0 30px;
+
+  @media (max-width: 1023px) {
+    padding: 40px 0 20px;
+  }
 }
 
 .skills__layout {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+  color: rgba(227, 227, 227, 0.3);
+  font-size: 180px;
+  font-weight: 900;
+  line-height: 1;
+  z-index: 0;
 
   span {
     display: block;
-    position: absolute;
-    top: -20px;
-    right: -265px;
-    text-transform: uppercase;
-    color: rgba(227, 227, 227, 0.4);
-    font-size: 180px;
-    font-weight: 900;
-    line-height: 1;
-    z-index: 0;
     transform-origin: 0 0;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translate(0, -400px);
+
+    @media (max-width: 1160px) {
+      transform: rotate(90deg) translate(0, -600px);
+    }
   }
 }
 
@@ -46,11 +55,6 @@
   font-weight: 300;
   font-size: 22px;
   line-height: 1;
-
-  //&--light {
-  //  color: $color-grey;
-  //  background-color: $color-grey-light;
-  //}
 }
 
 .skills__container {
@@ -58,11 +62,29 @@
   &--left {
     width: 320px;
     flex-shrink: 0;
+
+    @media (max-width: 1023px) {
+      width: 220px;
+    }
+
+    @media (max-width: 800px) {
+      width: 190px;
+    }
   }
 
   &--right {
     width: calc(80% - 320px);
     padding: 0 0 0 100px;
+
+    @media (max-width: 1023px) {
+      width: calc(86% - 220px);
+      padding: 0 0 0 60px;
+    }
+
+    @media (max-width: 800px) {
+      width: calc(90% - 190px);
+      padding: 0 0 0 50px;
+    }
   }
 }
 

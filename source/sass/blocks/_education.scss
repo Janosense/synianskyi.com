@@ -1,6 +1,10 @@
 .education {
   position: relative;
   padding: 30px 0;
+
+  @media (max-width: 1023px) {
+    padding: 20px 0;
+  }
 }
 
 .education__layout {
@@ -14,6 +18,10 @@
   font-weight: 900;
   line-height: 1;
   z-index: 0;
+
+  @media (max-width: 1023px) {
+    font-size: 160px;
+  }
 }
 
 .education__wrapper {
@@ -60,6 +68,10 @@
   color: $color-grey-light;
   font-size: 24px;
   font-weight: 300;
+
+  @media (max-width: 1023px) {
+    font-size: 22px;
+  }
 }
 
 .education__list {

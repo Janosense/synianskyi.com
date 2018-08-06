@@ -2,7 +2,7 @@
   visibility: hidden;
   display: block;
   position: fixed;
-  top: 70px;
+  top: 100px;
   left: 70px;
   margin: 0;
   padding: 0;
@@ -25,9 +25,29 @@
       fill: #5d6874
     }
   }
+
+  @media (max-width: 1655px) {
+    top: 40px;
+    left: 40px;
+  }
+
+  @media (max-width: 1365px) {
+    top: 30px;
+    left: 30px;
+  }
 }
 
 .cv-close__icon {
   fill: rgba(227, 227, 227, 0.9);
   transition: fill 0.3s ease;
+
+  @media (max-width: 1365px) {
+    width: 35px;
+    height: 35px;
+  }
+
+  @media (max-width: 1023px) {
+    width: 25px;
+    height: 25px;
+  }
 }

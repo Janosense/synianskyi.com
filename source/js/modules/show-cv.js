@@ -26,5 +26,5 @@ button.addEventListener("click", function () {
     cv.classList.add("cv--visible");
     closeButton.addEventListener("click", onCloseButtonClick);
     closeButton.classList.add("cv-close--active");
-  }, 800);
+  }, 650);
 });
