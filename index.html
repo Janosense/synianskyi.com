@@ -130,7 +130,10 @@
   <section class="introduction">
     <div class="introduction__wrapper">
       <div class="introduction__photo">
-        <img src="img/i.jpg" alt="" class="introduction__image">
+        <picture>
+          <source type="image/webp" srcset="img/webp/i@1x.webp 1x, img/webp/i@2x.webp 2x">
+          <img src="img/i@1x.jpg" srcset="img/i@2x.jpg 2x" alt="Тимофей Синянский" class="introduction__image" width="320" height="320">
+        </picture>
       </div>
       <div class="introduction__about">
         <h1 class="introduction__name rellax" data-rellax-speed="-2">Тимофей Синянский</h1>
