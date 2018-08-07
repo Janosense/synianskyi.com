@@ -204,8 +204,16 @@
   }
 
   a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
+    border-bottom: 1px dotted #b0b0b0;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #5d6874;
+      border-bottom-color: #5d6874;
+    }
   }
 
   @media (max-width: 413px) {
