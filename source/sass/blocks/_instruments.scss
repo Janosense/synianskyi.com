@@ -25,7 +25,8 @@
   position: relative;
   padding: 7px 0 7px;
   color: $color-grey;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 300;
 
   &::after {
     content: "";
@@ -43,6 +44,8 @@
   }
 
   @media (max-width: 680px) {
+    width: 100%;
     padding: 4px 15px;
+    text-align: center;
   }
 }

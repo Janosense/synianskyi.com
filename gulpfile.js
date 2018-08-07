@@ -50,7 +50,7 @@ const path = {
     sass: 'source/sass/*.scss',
     js: 'source/js/*.js',
     img: 'source/img/**/*.{jpeg,jpg,png,svg}',
-    webp: 'build/img/**/*.{jpeg,jpg,png}',
+    webp: './img/**/*.{jpeg,jpg,png}',
     fonts: 'source/fonts/**/*.{woff,woff2}'
   },
   watch: {
